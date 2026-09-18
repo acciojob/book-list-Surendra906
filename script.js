@@ -19,7 +19,7 @@ document.getElementById('book-form').addEventListener('submit',function(e){
 	document.getElementById('author').value='';
 	document.getElementById('isbn').value='';
 });
-document.getElementById('book-list-body').addEventListener('click',function(e){
+document.getElementById('book-list').addEventListener('click',function(e){
 	if(e.target.classList.contains('delete')){
 		e.target.parentElement.parentElement.remove();
 	}
