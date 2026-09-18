@@ -8,6 +8,35 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>MyBookList</h1>
+	<div class="form-group">
+		<form class="book-form">
+			<label for="title">Title</label><br>
+			<input id="title" class=title required>
+			<br>
+			
+			<label for ="author">Author</label><br>
+			<input id="author" class="author" required><br>
+			
+			<label for="isbn">ISBN#</label><br>
+			<input id="isbn" class="isbn" required><br>
+			
+			<button type="submit" id="submit">Add Book</button>
+			</form>
+	</div>
+			<table class="table table-striped" id="table">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Author</th>
+						<th>ISBN#</th>
+					</tr>
+				</thead>
+				<tbody id="book-list">
+					
+				</tbody>
+			</table>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
