@@ -6,7 +6,7 @@ document.getElementById('book-form').addEventListener('submit',function(e){
 	const author=document.getElementById('author').value;
 	const isbn=document.getElementById('isbn').value;
 	const bookList=document.getElementById('book-list');
-	const row=document.creatElement('tr');
+	const row=document.createElement('tr');
 	row.innerHTML=`
 	<td>${title}</td>
 	<td>${author}</td>
@@ -19,8 +19,8 @@ document.getElementById('book-form').addEventListener('submit',function(e){
 	document.getElementById('author').value='';
 	document.getElementById('isbn').value='';
 });
-document.getElementById('book-list').addEventlistener('click',function(e){
+document.getElementById('book-list').addEventListener('click',function(e){
 	if(e.target.classList.contains('delete')){
-		e.taarget.parentElement.parentElement.remove();
+		e.target.parentElement.parentElement.remove();
 	}
 });
